@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1f2122;
+}
+
+.active {
+  color: palevioletred;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  height: 10vh;
+}
+
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav_left > input {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #27292a;
+  outline: none;
+}
+
+.nav_content > ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+  color: #666;
+}
+
+.menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile_nav {
+  color: #666;
+  list-style: none;
+  position: relative;
+  top: 1.1rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.mobile_nav > li {
+  padding: 1rem;
+  background-color: #27292a;
+  transition: 0.3s ease;
+}
+
+.mobile_nav > li:hover {
+  background-color: #1f2122;
+  color: palevioletred;
+}
+
+.showNav {
+  height: 205px;
+}
+header {
+  max-width: 80%;
+  margin: auto;
+  background-color: #27292a;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.imgbrowse {
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  /* height: 55vh; */
+  border-radius: 30px;
+  color: white;
+  margin: auto auto;
+}
+
+.imgbrowse_info {
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  margin: auto;
+  padding: 3rem;
+}
+
+.imgbrowse_info > p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.imgbrowse_info > h1 {
+  font-size: 3rem;
+}
+
+.imgbrowse_info > button {
+  padding: 10px 2.5rem;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  margin: 1rem 0;
+}
+
+.section2,
+.section3 {
+  background-color: #1f2122;
+  border-radius: 30px;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.section2_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+.section2_info > article {
+  background-color: #27292a;
+  border-radius: 30px;
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 220px;
+}
+
+.section2_info > article > img {
+  border-radius: 24px;
+  padding-bottom: 0.6rem;
+  width: 100%;
+}
+
+.section2_info > article > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons_cont1 > i {
+  color: yellow;
+  gap: 1rem;
+}
+
+.icons_cont2 {
+  color: grey;
+  font-size: 15px;
+  text-transform: lowercase;
+  padding: 10px 0;
+}
+.icons_cont2 > i {
+  color: palevioletred;
+  gap: 1rem;
+}
+
+.buttons1 {
+  background-color: palevioletred;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 24px;
+  max-width: 200px;
+  margin: auto;
+}
+
+.headings {
+  color: white;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.section3 {
+  display: grid;
+}
+.item {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.item > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.item > ul > li > span {
+  color: grey;
+}
+
+.main-border-button {
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  background-color: transparent;
+  padding: 1rem 3.5rem;
+  border-radius: 24px;
+}
+
+.main-border-button > a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    width: 90%;
+    margin: auto;
+  }
+
+  .section2_info {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu {
+    display: block;
+  }
+
+  .nav_content > ul {
+    display: none;
+  }
+
+  .nav_left > input {
+    display: none;
+  }
+
+  .imgbrowse_info > h1 {
+    font-size: 2rem;
+  }
+
+  .section2_info > article {
+    width: 100%;
+  }
+
+  .buttons1 {
+    width: 150px;
+    padding: 9px 0;
+    margin: 1rem auto;
+  }
+
+  .headings {
+    font-size: 1rem;
+  }
+
+  .main-border-button {
+    width: 100px;
+    padding: 8px 15px;
+  }
+}
